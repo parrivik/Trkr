@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Trkr.LoginPage"
+             Title="Login"
+             BackgroundColor="#F5F5F5">
+    
+      <ContentPage.Content>
+        <Grid BackgroundColor="#F5F5F5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,100,0,0" Grid.Row="0" />
+            
+
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                
+                <Image Source="https://img.icons8.com/color/240/000000/ecosia.png"  VerticalOptions="EndAndExpand"/>
+                <Label Grid.Row="1" Text="Login" FontSize="20" HorizontalOptions="Center"/>
+                <Entry Grid.Row="2" Placeholder="Email" PlaceholderColor="#bababa" FontSize="16" x:Name="loginEmail"/>
+                <Entry Grid.Row="3" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16" x:Name="loginPassword" IsPassword="true" />
+                <Button Text="Login" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="4" x:Name="loginButton" Clicked="OnLogin" />
+                
+                <Grid Grid.Row="5"/>
+                     <Grid Grid.Row="6">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        
+
+
+                    </Grid.ColumnDefinitions>
+                    <Label BackgroundColor="#bababa" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <!--<Label Text="" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>-->
+                    <Image Source="https://img.icons8.com/ios/50/000000/delete-sign.png" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>
+
+
+                    <Label BackgroundColor="#bababa" Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+
+
+                </Grid>
+                <Grid Grid.Row="7"/>
+                <Label Grid.Row="8" Text="Register" FontSize="20" HorizontalOptions="Center"/>
+                <Entry Grid.Row="9" Placeholder="Email" PlaceholderColor="#bababa" FontSize="16" x:Name="registerEmail"/>
+                <Entry Grid.Row="10" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16" x:Name="registerPassword" IsPassword="true"/>
+                <Button Text="Register" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="11" Clicked="OnRegister"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
