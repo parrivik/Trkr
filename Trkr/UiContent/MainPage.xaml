@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Trkr.UiContent"
              x:Class="Trkr.UiContent.MainPage">
     <local:UserInfo></local:UserInfo>
-    <local:MyLocation></local:MyLocation>
+    <local:MapPage></local:MapPage>
     <local:Friends></local:Friends>
     <local:Leaderboard></local:Leaderboard>
     <local:Settings></local:Settings>

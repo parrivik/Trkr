@@ -8,6 +8,8 @@ namespace Trkr
     public partial class App : Application
     {
         public static UserData logedInUser;
+        public static double ScreenHeight;
+        public static double ScreenWidth;
 
         public App()
         {

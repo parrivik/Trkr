@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Trkr;
+using Trkr.UiContent;
 
 using Xamarin.Forms;
 
@@ -15,7 +15,7 @@ namespace Trkr.UiContent
 
         public void OnLogout(object sender, EventArgs e)
         {
-            //MyLocation.trackingThread.Abort();
+            MapPage.trackingThread.Abort();
             App.logedInUser = null;
             Application.Current.MainPage = new LoginPage();
 

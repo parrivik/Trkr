@@ -36,6 +36,10 @@ namespace Trkr
                     await DisplayAlert("Alert", "Email or Password are wrong!", "OK");
                 }
             }
+            else
+            {
+                await DisplayAlert("Alert", "No Email or Password providen!", "OK");
+            }
         }
 
 
@@ -62,6 +66,10 @@ namespace Trkr
 
                 //bool response = await DisplayAlert("Register", "Would you like to register yourself?", "Yes", "No");
 
+            }
+            else
+            {
+                await DisplayAlert("Alert", "No Email or Password providen!", "OK");
             }
         }
 
